@@ -1,0 +1,74 @@
+
+Lenovo@Lenovo-PC MINGW64 /f/Git001 (nlh)
+$ git checkout -b "exampleBranch"
+Switched to a new branch 'exampleBranch'
+
+Lenovo@Lenovo-PC MINGW64 /f/Git001 (exampleBranch)
+$ git status
+On branch exampleBranch
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        asdfasdf.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Lenovo@Lenovo-PC MINGW64 /f/Git001 (exampleBranch)
+$ git add asdfasdf.txt
+
+Lenovo@Lenovo-PC MINGW64 /f/Git001 (exampleBranch)
+$ git status
+On branch exampleBranch
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   asdfasdf.txt
+
+
+Lenovo@Lenovo-PC MINGW64 /f/Git001 (exampleBranch)
+$ git commit -m o
+[exampleBranch 77912ec] o
+ 1 file changed, 1 insertion(+)
+ create mode 100644 asdfasdf.txt
+
+Lenovo@Lenovo-PC MINGW64 /f/Git001 (exampleBranch)
+$ git commit -m "txt"
+On branch exampleBranch
+nothing to commit, working tree clean
+
+Lenovo@Lenovo-PC MINGW64 /f/Git001 (exampleBranch)
+$ git pust -u origin exampleBranch
+git: 'pust' is not a git command. See 'git --help'.
+
+The most similar command is
+        push
+
+Lenovo@Lenovo-PC MINGW64 /f/Git001 (exampleBranch)
+$ git push -u origin exampleBranch
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 275 bytes | 275.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'exampleBranch' on GitHub by visiting:
+remote:      https://github.com/Nyanhtet-Bat/profile-0001/pull/new/exampleBranch
+remote:
+To https://github.com/Nyanhtet-Bat/profile-0001.git
+ * [new branch]      exampleBranch -> exampleBranch
+Branch 'exampleBranch' set up to track remote branch 'exampleBranch' from 'origin'.
+
+Lenovo@Lenovo-PC MINGW64 /f/Git001 (exampleBranch)
+$ git checkout exampleBranch
+Already on 'exampleBranch'
+Your branch is up to date with 'origin/exampleBranch'.
+
+Lenovo@Lenovo-PC MINGW64 /f/Git001 (exampleBranch)
+$ git status
+On branch exampleBranch
+Your branch is up to date with 'origin/exampleBranch'.
+
+nothing to commit, working tree clean
+
+Lenovo@Lenovo-PC MINGW64 /f/Git001 (exampleBranch)
+$
